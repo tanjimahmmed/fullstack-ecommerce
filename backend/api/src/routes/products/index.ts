@@ -1,20 +1,18 @@
 import Router from 'express'
+import { listProducts, getProductsById, createProduct, updateProduct, deleteProduct } from './productsController'
 
 // products endpoint
 
 const router = Router()
 
-router.get('/', (req, res) => {
-    res.send('The list of products')
-})
+router.get('/', listProducts)
 
-router.get('/:id', (req, res) => {
-    console.log(req.params)
-    res.send('Individual product')
-})
+router.get('/:id', getProductsById)
 
-router.post('/', (req, res) => {
-    res.send('New item added')
-})
+router.post('/', createProduct)
+
+router.put('/:id', updateProduct)
+
+router.delete('/:id', deleteProduct)
 
 export default router;
