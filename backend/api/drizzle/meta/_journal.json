@@ -8,6 +8,13 @@
       "when": 1731998783532,
       "tag": "0000_overjoyed_morg",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1732106178798,
+      "tag": "0001_ancient_serpent_society",
+      "breakpoints": true
     }
   ]
 }
