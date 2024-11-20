@@ -18,4 +18,8 @@ router.post(
   createOrder
 );
 
+router.get('/', verifyToken, listOrders)
+router.get('/:id', verifyToken, getOrder)
+router.put('/:id', verifyToken, validateData(updateOrderSchema), updateOrder)
+
 export default router;
